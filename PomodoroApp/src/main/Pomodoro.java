@@ -80,8 +80,8 @@ public class Pomodoro {
     	Back2Work, Break;
     }
     
-    private String back2WorkSoundFilePath = "glados.wav";
-    private String breakSoundFilePath = "backToWork.wav";
+    private String back2WorkSoundFilePath = "PomodoroApp\\glados.wav";
+    private String breakSoundFilePath = "PomodoroApp\\backToWork.wav";
     
     Clip back2WorkClip = null, breakClip = null;
     
@@ -111,7 +111,7 @@ public class Pomodoro {
 		frmPomodoro.getContentPane().setLayout(null);
 		try {
 			
-			frmPomodoro.setIconImage(ImageIO.read(new File("icon.png")));
+			frmPomodoro.setIconImage(ImageIO.read(new File("PomodoroApp\\icon.png")));
 		} catch (Exception e1) {
 			e1.printStackTrace();
 		}
@@ -196,7 +196,7 @@ public class Pomodoro {
 		BufferedImage buttonIcon = new BufferedImage(10,10,BufferedImage.TYPE_INT_RGB);
 		
 		try{
-			buttonIcon = ImageIO.read(new File("openFolder.png"));
+			buttonIcon = ImageIO.read(new File("PomodoroApp\\openFolder.png"));
 		}catch(Exception e){
 			e.printStackTrace();
 		}
